@@ -615,7 +615,18 @@ footer {
   width: 20px;
   height: 20px;
 }
-
+@media (max-width: 600px) {
+  .popup-card {
+    width: 90vw !important;        /* Use 90% of viewport width */
+    max-width: 90vw !important;    /* Override any max-width */
+    left: 50% !important;          /* Center horizontally */
+    top: 50% !important;           /* Center vertically */
+    bottom: auto !important;       /* Remove bottom positioning */
+    transform: translate(-50%, -50%) !important; /* Perfect centering */
+    padding: 15px !important;      /* Slightly smaller padding */
+    box-sizing: border-box;
+  }
+}
 /* Floating WhatsApp Button */
 .whatsapp-float {
   position: fixed;
