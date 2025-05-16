@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="logo-location">
+            <div class="logo">AQUA NOX</div>
+            <div class="location-info">
+              <div class="location-top">
+                <img
+                  src="https://img.icons8.com/ios-filled/20/000000/marker.png"
+                  alt="Location Icon"
+                />
+                <div class="location-bottom">
+                  <span>Kolkata,WB</span>
+                  <span>743318, INDIA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#machines">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="hamburger" id="hamburger">&#9776;</div>
+          <div class="close-icon" id="closeIcon">&times;</div>
+        </div>
+      </nav>
+    </header>
+    <!--POP UP-->
+    <div id="contact-popup" class="popup-card hidden">
+      <span class="close-btn" onclick="closePopup()">×</span>
+      <h3>Need Assistance?</h3>
+      <p>Leave your contact info and message below.</p>
+      <input
+        type="text"
+        id="popup-contact"
+        placeholder="Mobile or Email"
+        required
+      />
+      <textarea
+        id="popup-message"
+        rows="3"
+        placeholder="Your message..."
+        required
+      ></textarea>
+      <button class="popup-send-btn" onclick="sendWhatsAppMessage()">
+        <img
+          src="https://img.icons8.com/color/24/000000/whatsapp--v1.png"
+          alt="WhatsApp"
+          class="wa-icon"
+        />
+        Send via WhatsApp
+      </button>
+    </div>
+
+    <!--SlideShow-->
+    <section id="home">
+      <div class="slideshow-container">
+        <!-- Slide 1 -->
+        <div class="mySlides fade">
+          <div class="slide-content">
+            <h1>Welcome to AQUA NOX</h1>
+            <p>
+              "From the heart of purity flows every drop... <br />
+              Taste clarity, feel serenity."
+            </p>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="mySlides fade">
+          <div class="slide-content">
+            <h1>Meet Our Founder</h1>
+            <p>Prabir Sarkar – The visionary man behind AQUA NOX.</p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="mySlides fade">
+          <div class="slide-content">
+            <h1>Our Dedicated Team</h1>
+            <p>Passionate individuals bringing you the purest mineral water.</p>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="mySlides fade">
+          <div class="slide-content">
+            <h1>Advanced Machinery</h1>
+            <p>
+              Where technology meets nature — precision filtration at its best.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Products-->
+    <section id="machines">
+      <h2 class="section-title">PRODUCTS</h2>
+
+      <div class="machine-row">
+        <img src="ro_plant.png" alt="Water Filtration Machine" />
+        <div class="machine-info">
+          <p><strong>Water Filtration Unit</strong></p>
+          <p>
+            This industrial-grade water filtration unit is designed to eliminate
+            sediments, chemicals, and harmful microorganisms through a
+            multi-stage filtration process. It includes activated carbon
+            filters, reverse osmosis membranes, and UV sterilizers to ensure
+            that every drop meets the highest purity standards. This is the
+            heart of our purification line, ensuring safety and taste in every
+            bottle.
+          </p>
+          <button class="machine-contact-btn" onclick="showPopup()">
+            <img
+              src="https://img.icons8.com/color/24/000000/whatsapp--v1.png"
+              alt="WhatsApp"
+              class="wa-icon"
+            />
+            Contact Us
+          </button>
+        </div>
+      </div>
+
+      <div class="machine-row">
+        <img src="ro_plant.png" alt="Bottling Machine" />
+        <div class="machine-info">
+          <p><strong>Automatic Bottling Machine</strong></p>
+          <p>
+            Our automated bottling system efficiently fills, seals, and labels
+            mineral water bottles without human contact, preserving hygiene and
+            consistency. The machine handles hundreds of bottles per hour with
+            precision, ensuring every unit is perfectly filled and safely sealed
+            for distribution. This ensures faster production while meeting
+            industry safety and packaging standards.
+          </p>
+          <button class="machine-contact-btn" onclick="showPopup()">
+            <img
+              src="https://img.icons8.com/color/24/000000/whatsapp--v1.png"
+              alt="WhatsApp"
+              class="wa-icon"
+            />
+            Contact Us
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--Purification Process-->
+    <section>
+      <h2 class="section-title">MACHINE OPERATIONS</h2>
+
+      <div class="video-cards">
+        <!-- Video 1 -->
+        <div class="video-card">
+          <video controls>
+            <source src="video1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <h4>Step 1: Pre-Filtration</h4>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-card">
+          <video controls>
+            <source src="video2.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <h4>Step 2: Filtration and Purification</h4>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-card">
+          <video controls>
+            <source src="video3.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <h4>Step 3: Bottling and Packaging</h4>
+        </div>
+      </div>
+    </section>
+
+    <!--About Section-->
+    <section
+      id="about"
+      style="
+        background-color: #03045e;
+        color: white;
+        text-align: center;
+        padding: 3rem 1rem;
+        border-radius: 0px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <h2 class="section-title" style="color: #00b4d8">Who We Are</h2>
+      <p style="max-width: 700px; margin: auto">
+        At AQUA NOX, we are committed to delivering crystal-clear mineral water
+        purified through cutting-edge filtration technologies. Our mission is to
+        ensure every sip you take is safe, refreshing, and reliable — trusted by
+        homes and businesses alike. We combine science and care to bottle purity
+        and deliver it to your door. For more information click on the below
+        button....
+      </p>
+      <button
+        onclick="window.location.href='#contact'"
+        style="
+          margin-top: 20px;
+          padding: 10px 20px;
+          background-color: #00b4d8;
+          border: none;
+          color: white;
+          border-radius: 8px;
+          cursor: pointer;
+        "
+      >
+        About Us
+      </button>
+    </section>
+
+    <!--Contact Section-->
+    <section id="contact">
+      <h2 class="section-title">BUSINESS ENQUIRY</h2>
+
+      <div class="contact-cards">
+        <!-- Enquiry Form Card -->
+        <div class="card enquiry-form">
+          <h3>Connect With Us</h3>
+          <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter Your Name"
+              required
+            />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter Your Email"
+              required
+            />
+
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Leave a Message"
+              rows="4"
+              required
+            ></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+
+        <!-- Contact Info Card -->
+        <div class="card contact-info">
+          <h3>Contact Info</h3>
+          <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+          <p><strong>Email:</strong> aquanox@example.com</p>
+
+          <h4 style="color: #0077b6">Location</h4>
+          <div class="google-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230.46921747598867!2d88.15158324533073!3d22.447556231756977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02870012526bc9%3A0xd8cef23173f0eee2!2sSarkar&#39;s%20Residence!5e0!3m2!1sen!2sin!4v1747246997239!5m2!1sen!2sin"
+              width="100%"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Footer Section-->
+    <footer>
+      <p>© <span id="year"></span> AQUA NOX. All rights reserved.</p>
+    </footer>
+    <!--Logic Building-->
+    <script src="script.js"></script>
+  </body>
+</html>
